@@ -1,0 +1,10 @@
+# Memristive IV Classifier — minimal dependencies for analysis + batch tools
+# Python 3.10+ recommended
+
+numpy>=2.0
+scipy>=1.10
+pandas>=2.0
+matplotlib>=3.8
+
+# Optional: review GUIs (data_consolidation, classification_validation)
+# tkinter is stdlib on Windows

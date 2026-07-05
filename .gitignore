@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Batch / local data
+tools/data_consolidation/data/
+tools/data_consolidation/*.log
+tools/data_consolidation/classification_results.*
+tools/data_consolidation/review_corrections.json
+tools/data_consolidation/manifest.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
