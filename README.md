@@ -42,6 +42,8 @@ Start at **[docs/README.md](docs/README.md)** for a 5-minute overview, then:
 
 Switchbox_GUI integrates this classifier into live measurement (Measurement GUI), device map overlays (Sample GUI), and plotting. Those GUI layers stay in Switchbox_GUI; this repo holds the **classifier + offline tools + docs**.
 
+**Live repo:** https://github.com/Craig-Venables/memristive-iv-classifier
+
 ## License
 
 Same as parent project (University of Nottingham research use). Add a LICENSE file when publishing to GitHub.
