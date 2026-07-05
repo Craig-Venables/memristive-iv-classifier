@@ -46,11 +46,22 @@ Other Options:
 # Core analyzer (fundamental, no aggregation)
 from .core import SweepAnalyzer
 
-# Aggregators (combine multiple units)
-from .aggregators import DeviceAnalyzer, SectionAnalyzer, SampleAnalysisOrchestrator, ComprehensiveAnalyzer
-
 # API (most commonly used)
 from .api import IVSweepAnalyzer, IVSweepLLMAnalyzer, quick_analyze, analyze_sweep
+
+# Aggregators require the plotting package (Switchbox_GUI only)
+try:
+    from .aggregators import (
+        DeviceAnalyzer,
+        SectionAnalyzer,
+        SampleAnalysisOrchestrator,
+        ComprehensiveAnalyzer,
+    )
+except ImportError:
+    DeviceAnalyzer = None  # type: ignore[misc, assignment]
+    SectionAnalyzer = None  # type: ignore[misc, assignment]
+    SampleAnalysisOrchestrator = None  # type: ignore[misc, assignment]
+    ComprehensiveAnalyzer = None  # type: ignore[misc, assignment]
 
 __all__ = [
     # Core (single-unit analysis)

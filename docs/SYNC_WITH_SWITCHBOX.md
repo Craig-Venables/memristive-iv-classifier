@@ -48,6 +48,8 @@ robocopy tools\data_consolidation\ "$dest\tools\data_consolidation" /MIR /XD __p
 robocopy tools\classification_validation\ "$dest\tools\classification_validation" /MIR /XD __pycache__ /XF *.pyc
 ```
 
+A post-sync script re-applies the standalone import patch (`tools/apply_standalone_patch.ps1`) so `from analysis import quick_analyze` works without the plotting package.
+
 ## After syncing
 
 1. Re-run `examples/classify_single_sweep.py` on a test file if you changed core logic

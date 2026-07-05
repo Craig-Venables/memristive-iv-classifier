@@ -5,8 +5,11 @@
 Run from repo root (or add repo root to `PYTHONPATH`):
 
 ```python
-from analysis import quick_analyze, analyze_sweep, IVSweepAnalyzer, SweepAnalyzer, read_data_file
+from analysis import quick_analyze, analyze_sweep, IVSweepAnalyzer, SweepAnalyzer
+from analysis.core.sweep_analyzer import read_data_file
 ```
+
+**Note:** `ComprehensiveAnalyzer` and other aggregators require the `plotting` package from Switchbox_GUI and are not available in this standalone repo unless you install plotting separately.
 
 ## quick_analyze
 
